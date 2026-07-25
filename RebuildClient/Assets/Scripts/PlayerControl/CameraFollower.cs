@@ -1484,6 +1484,9 @@ namespace Assets.Scripts
                 case "Hiding":
                     HideEffect.AttachHideEffect(target);
                     return;
+                case "GrandCross":
+                    GrandCrossEffect.Create(target);
+                    return;
             }
 
             if (EffectCache.TryGetValue(effect, out var prefab) && prefab != null)
